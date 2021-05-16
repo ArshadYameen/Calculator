@@ -1,0 +1,14 @@
+<!DOCTYPE RequestMapper
+		[
+				<!ENTITY RISK_APIREQUEST_BY_GET SYSTEM "RiskAPIRequestByGet.xml">
+				]>
+<RequestMapper>
+
+	 <Request uri="/calculator" bean="com.zoho.pay.merchantonboarding.framework.api.CalculatorAPI" method="calculator">
+		<Parameter name="operator" source="request" value="operator" type="String"/>
+		<Parameter name="operandA" source="request" value="operandA" type="BIGINT"/>
+		<Parameter name="operandB" source="request" value="operandB" type="BIGINT"/>
+	</Request>
+
+	&RISK_APIREQUEST_BY_GET;
+</RequestMapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<security xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../conf/security.xsd">
+
+<urls prefix="/api/v1" operation-type="READ" method="get" authentication="required" login-throwerror="true">
+	<url user="true" path="/settings/risk" apiscope="riskonboardingapi" iscscope="riskonboardingapi" oauthscope="riskonboarding"
+	     duration="10" threshold="100" lock-period="10" description="Getting merchant risk settings">
+		</url>
+	</urls>
+
+</security>
