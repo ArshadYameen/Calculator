@@ -32,10 +32,22 @@ public class CalculateAction
 		{
 			result.put("Result", operandA - operandB);
 		}
+		
+		else if(operation == "multiply")
+		{
+			result.put("Result", operandA * operandB);
+		}
+		
+		else if(operation == "divide")
+		{
+			result.put("Result", operandA / operandB);
+		}
+		
 		else
 		{
 			result.put("Error", "Invalid Operation");
 		}
+		
 		return (Map<String, Object>) result;
 	}
 }
